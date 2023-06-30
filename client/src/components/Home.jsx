@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="container px-5">
+    <div className="container">
       <h1
         className="display-3"
         style={{
@@ -12,7 +12,19 @@ const Home = () => {
         </em>
       </h1>
       <h3 style={{ fontWeight: 600 }}>Web Developer & Designer</h3>
-      <button type="button" className="btn outlineBtn">
+      <button
+        type="button"
+        className="btn btn-lg outlineBtn"
+        onClick={() => {
+          const contactSection = document.getElementById("Contact");
+          if (contactSection) {
+            window.scrollTo({
+              top: contactSection.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        }}
+      >
         <strong>Hire me</strong>
       </button>
     </div>

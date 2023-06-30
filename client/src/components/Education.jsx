@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="container px-5">
+    <div className="container">
       <h1
         className="display-3"
         style={{

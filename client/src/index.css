@@ -31,5 +31,6 @@ body {
 .nav-pills .nav-link.active {
   color: #20c997 !important;
   background-color: #111418 !important;
-  font-weight: bold !important;
+  font-size: 18px;
+  font-weight: 600 !important;
 }

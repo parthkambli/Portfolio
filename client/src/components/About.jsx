@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container px-5 fw-bold">
+    <div className="container fw-bold">
       <h1
         className="display-3"
         style={{
@@ -13,7 +13,7 @@ const About = () => {
           About<span style={{ color: "#20C997" }}> Me</span>
         </em>
       </h1>
-      <p>
+      <p style={{ textAlign: "justify" }}>
         I am a passionate and creative{" "}
         <span style={{ color: "#20C997", fontWeight: 600 }}>
           web developer and designer,
@@ -25,13 +25,13 @@ const About = () => {
         <span style={{ color: "#20C997", fontWeight: 600 }}>
           MERN (MongoDB, Express.js, React.js, Node.js) stack,
         </span>{" "}
-        which allows me to develop robust and scalable web applications. 
+        which allows me to develop robust and scalable web applications.
       </p>
       <div
         className="row m-2 p-2 pt-4 rounded-4"
         style={{ backgroundColor: "#111418" }}
       >
-        <div className="col-6">
+        <div className="col-md-6">
           <p>
             Name :{" "}
             <span className="m-0 fs-6 fw-light" style={{ color: "#999999" }}>
@@ -51,7 +51,7 @@ const About = () => {
             </span>
           </p>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <p>
             Address :{" "}
             <span className="m-0 fs-6 fw-light" style={{ color: "#999999" }}>

@@ -3,7 +3,7 @@ import { MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className="container px-5 fw-bold">
+    <div className="container fw-bold">
       <h1
         className="display-3"
         style={{
@@ -18,10 +18,10 @@ const Contact = () => {
         className="row m-2 p-2 rounded-4"
         style={{ backgroundColor: "#111418" }}
       >
-        <div className="col-6">
-          <div className="d-flex p-2">
+        <div className="col-lg-6">
+          <div className="d-flex p-2 ">
             <div className="w-auto h-50">
-              <FaEnvelope size={60} style={{ color: "#20C997" }} />
+              <FaEnvelope className="display-3" style={{ color: "#20C997" }} />
             </div>
             <div className="px-2 py-1">
               <h5 className="m-0" style={{ fontWeight: 600 }}>
@@ -34,7 +34,7 @@ const Contact = () => {
           </div>
           <div className="d-flex p-2">
             <div className="w-auto h-50">
-              <FaPhoneAlt size={60} style={{ color: "#20C997" }} />
+              <FaPhoneAlt className="display-3" style={{ color: "#20C997" }} />
             </div>
             <div className="px-2 py-1">
               <h5 className="m-0" style={{ fontWeight: 600 }}>
@@ -46,10 +46,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-lg-6">
           <div className="d-flex p-2">
             <div className="w-auto h-50">
-              <FaWhatsapp size={60} style={{ color: "#20C997" }} />
+              <FaWhatsapp className="display-3" style={{ color: "#20C997" }} />
             </div>
             <div className="px-2 py-1">
               <h5 className="m-0" style={{ fontWeight: 600 }}>
@@ -62,7 +62,10 @@ const Contact = () => {
           </div>
           <div className="d-flex p-2">
             <div className="w-auto h-50">
-              <MdLocationOn size={60} style={{ color: "#20C997" }} />
+              <MdLocationOn
+                className="display-3"
+                style={{ color: "#20C997" }}
+              />
             </div>
             <div className="px-2 py-1">
               <h5 className="m-0" style={{ fontWeight: 600 }}>
@@ -76,7 +79,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="m-2 p-2">
-        <form>
+        <form className="d-flex flex-column">
           <div className="mb-3">
             <input type="text" className="form-control" placeholder="Name" />
           </div>
@@ -94,9 +97,11 @@ const Contact = () => {
               placeholder="Your Message"
             ></textarea>
           </div>
-          <button type="submit" className="btn Btn float-end">
-            Send Message
-          </button>
+          <div className="d-flex justify-content-end">
+            <button type="submit" className="btn Btn ">
+              Send Message
+            </button>
+          </div>
         </form>
       </div>
     </div>
