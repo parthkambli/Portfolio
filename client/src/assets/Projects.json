@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "CineVerse",
+            "image": "https://i.ibb.co/SNNC79w/Cine-Verse.jpg",
+            "description": "The movie app built using TMDB API and React.js",
+            "githubLink": "https://github.com/parthkambli/CineVerse",
+            "liveDemoLink": "https://cineverse-app.netlify.app/"
+        },
+        {
+            "id": 2,
+            "name": "Warehouse",
+            "image": "https://i.ibb.co/sVH6tDT/warehouse.jpg",
+            "description": "An Inventory management app build using MERN stack",
+            "githubLink": "https://github.com/parthkambli/Warehouse",
+            "liveDemoLink": "https://techno-warehouse.netlify.app/"
+        }
+    ]
+}

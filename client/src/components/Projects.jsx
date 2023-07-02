@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import projectImg from "../assets/Capture.jpg";
+import projectsList from "../assets/Projects.json";
 
 const Projects = () => {
   const responsive = {
@@ -45,151 +45,45 @@ const Projects = () => {
         responsive={responsive}
         removeArrowOnDeviceType={["md", "sm", "xs"]}
       >
-        <div
-          className="card text-white m-2 my-4 border border-2 border-white rounded-4"
-          style={{ backgroundColor: "#111418" }}
-        >
-          <img
-            src={projectImg}
-            className="card-img-top rounded-top-4 rounded-bottom-0"
-            alt="..."
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{ color: "#20C997", fontWeight: 600 }}
-            >
-              CineVerse
-            </h5>
-            <p className="card-text">
-              The movie app build using TMDB Api and React.js
-            </p>
-            <div className="row d-flex justify-content-between px-2">
-              <a href="/" className="col-lg-6 w-auto btn outlineBtn">
-                GitHub
-              </a>
-              <a href="/" className="col-lg-6 w-auto btn Btn">
-                Live Demo
-              </a>
+        {projectsList.projects.map((project) => (
+          <div
+            className="card text-white m-2 my-4 border border-2 border-white rounded-4"
+            style={{ backgroundColor: "#111418" }}
+          >
+            <img
+              src={project.image}
+              className="card-img-top rounded-top-4 rounded-bottom-0"
+              alt="..."
+            />
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{ color: "#20C997", fontWeight: 600 }}
+              >
+                {project.name}
+              </h5>
+              <p className="card-text">{project.description}</p>
+              <div className="row d-flex justify-content-between px-2">
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  className="col-lg-6 w-auto btn outlineBtn"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.liveDemoLink}
+                  target="_blank"
+                  className="col-lg-6 w-auto btn Btn"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="card text-white m-2 my-4 border border-2 border-white rounded-4"
-          style={{ backgroundColor: "#111418" }}
-        >
-          <img
-            src={projectImg}
-            className="card-img-top rounded-top-4 rounded-bottom-0"
-            alt="..."
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{ color: "#20C997", fontWeight: 600 }}
-            >
-              CineVerse
-            </h5>
-            <p className="card-text">
-              The movie app build using TMDB Api and React.js
-            </p>
-            <div className="row d-flex justify-content-between px-2">
-              <a href="/" className="col-lg-6 w-auto btn outlineBtn">
-                GitHub
-              </a>
-              <a href="/" className="col-lg-6 w-auto btn Btn">
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          className="card text-white m-2 my-4 border border-2 border-white rounded-4"
-          style={{ backgroundColor: "#111418" }}
-        >
-          <img
-            src={projectImg}
-            className="card-img-top rounded-top-4 rounded-bottom-0"
-            alt="..."
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{ color: "#20C997", fontWeight: 600 }}
-            >
-              CineVerse
-            </h5>
-            <p className="card-text">
-              The movie app build using TMDB Api and React.js
-            </p>
-            <div className="row d-flex justify-content-between px-2">
-              <a href="/" className="col-lg-6 w-auto btn outlineBtn">
-                GitHub
-              </a>
-              <a href="/" className="col-lg-6 w-auto btn Btn">
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          className="card text-white m-2 my-4 border border-2 border-white rounded-4"
-          style={{ backgroundColor: "#111418" }}
-        >
-          <img
-            src={projectImg}
-            className="card-img-top rounded-top-4 rounded-bottom-0"
-            alt="..."
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{ color: "#20C997", fontWeight: 600 }}
-            >
-              CineVerse
-            </h5>
-            <p className="card-text">
-              The movie app build using TMDB Api and React.js
-            </p>
-            <div className="row d-flex justify-content-between px-2">
-              <a href="/" className="col-lg-6 w-auto btn outlineBtn">
-                GitHub
-              </a>
-              <a href="/" className="col-lg-6 w-auto btn Btn">
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          className="card text-white m-2 my-4 border border-2 border-white rounded-4"
-          style={{ backgroundColor: "#111418" }}
-        >
-          <img
-            src={projectImg}
-            className="card-img-top rounded-top-4 rounded-bottom-0"
-            alt="..."
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{ color: "#20C997", fontWeight: 600 }}
-            >
-              CineVerse
-            </h5>
-            <p className="card-text">
-              The movie app build using TMDB Api and React.js
-            </p>
-            <div className="row d-flex justify-content-between px-2">
-              <a href="/" className="col-lg-6 w-auto btn outlineBtn">
-                GitHub
-              </a>
-              <a href="/" className="col-lg-6 w-auto btn Btn">
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
+        ))}
       </Carousel>
     </div>
   );
