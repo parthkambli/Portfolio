@@ -2,19 +2,19 @@
     "projects": [
         {
             "id": 1,
+            "name": "WorkoutBuddy",
+            "image": "https://i.ibb.co/zZ75hkH/Workout-Buddy.jpg",
+            "description": "Simple MERN App to Plane and Manage your Workout",
+            "githubLink": "https://github.com/parthkambli/WorkoutBuddy",
+            "liveDemoLink": "https://workout-buddy-mern-app.netlify.app/"
+        },
+        {
+            "id": 2,
             "name": "CineVerse",
             "image": "https://i.ibb.co/SNNC79w/Cine-Verse.jpg",
             "description": "The movie app built using TMDB API and React.js",
             "githubLink": "https://github.com/parthkambli/CineVerse",
             "liveDemoLink": "https://cineverse-app.netlify.app/"
-        },
-        {
-            "id": 2,
-            "name": "Warehouse",
-            "image": "https://i.ibb.co/sVH6tDT/warehouse.jpg",
-            "description": "An Inventory management app build using MERN stack",
-            "githubLink": "https://github.com/parthkambli/Warehouse",
-            "liveDemoLink": "https://techno-warehouse.netlify.app/"
         }
     ]
 }

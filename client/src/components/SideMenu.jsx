@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import ProfilePicture from "../assets/PK.png";
 
 const SideMenu = () => {
@@ -64,10 +64,30 @@ const SideMenu = () => {
       </nav>
       <hr className="my-2" />
       <div className="d-flex justify-content-evenly align-items-center px-4">
-        <FaInstagram className="fs-2" />
-        <FaLinkedin className="fs-2" />
-        <FaGithub className="fs-2" />
-        <FaFacebook className="fs-2" />
+        <a
+          href="https://www.instagram.com/kambli.parth/?next=%2F"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white"
+        >
+          <FaInstagram className="fs-2" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/parth-kambli-24880613a/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white"
+        >
+          <FaLinkedin className="fs-2" />
+        </a>
+        <a
+          href="https://github.com/parthkambli"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white"
+        >
+          <FaGithub className="fs-2" />
+        </a>
       </div>
     </div>
   );
