@@ -37,7 +37,7 @@ const OffCanvasMenu = () => {
           <button
             type="button"
             className="btn btn-sm outlineBtn float-end m-2"
-            data-bs-dismiss="offcanvas"
+            onClick={closeOffCanvas}
             aria-label="Close"
           >
             <AiOutlineClose className="fs-4" />
