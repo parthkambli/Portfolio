@@ -55,7 +55,8 @@ const About = () => {
           <p>
             Address :{" "}
             <span className="m-0 fs-6 fw-light" style={{ color: "#999999" }}>
-              Patel Pada, Dahanu, Maharashtra, 401602
+              101, Dave Darshan apartments, Patel Pada, Dahanu, Maharashtra,
+              401602
             </span>
           </p>
           <p>

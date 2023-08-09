@@ -1,7 +1,7 @@
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import ProfilePicture from "../assets/PK.png";
 
-const SideMenu = () => {
+const SideMenu = ({ onClose }) => {
   return (
     <div className="container text-white text-center min-vh-100 d-flex flex-column justify-content-evenly p-2">
       <div className="px-4">
@@ -22,6 +22,11 @@ const SideMenu = () => {
             className="nav-link py-1 text-white"
             style={{ fontWeight: 300 }}
             href="#Home"
+            onClick={() => {
+              if (window.innerWidth <= 992) {
+                onClose(); // Call the onClose function to close the offcanvas
+              }
+            }}
           >
             Home
           </a>
@@ -29,6 +34,11 @@ const SideMenu = () => {
             className="nav-link py-1 text-white"
             style={{ fontWeight: 300 }}
             href="#About"
+            onClick={() => {
+              if (window.innerWidth <= 992) {
+                onClose(); // Call the onClose function to close the offcanvas
+              }
+            }}
           >
             About
           </a>
@@ -36,6 +46,11 @@ const SideMenu = () => {
             className="nav-link py-1 text-white"
             style={{ fontWeight: 300 }}
             href="#Skills"
+            onClick={() => {
+              if (window.innerWidth <= 992) {
+                onClose(); // Call the onClose function to close the offcanvas
+              }
+            }}
           >
             Skills
           </a>
@@ -43,6 +58,11 @@ const SideMenu = () => {
             className="nav-link py-1 text-white"
             style={{ fontWeight: 300 }}
             href="#Education"
+            onClick={() => {
+              if (window.innerWidth <= 992) {
+                onClose(); // Call the onClose function to close the offcanvas
+              }
+            }}
           >
             Education
           </a>
@@ -50,6 +70,11 @@ const SideMenu = () => {
             className="nav-link py-1 text-white"
             style={{ fontWeight: 300 }}
             href="#Projects"
+            onClick={() => {
+              if (window.innerWidth <= 992) {
+                onClose(); // Call the onClose function to close the offcanvas
+              }
+            }}
           >
             Projects
           </a>
@@ -57,6 +82,11 @@ const SideMenu = () => {
             className="nav-link py-1 text-white"
             style={{ fontWeight: 300 }}
             href="#Contact"
+            onClick={() => {
+              if (window.innerWidth <= 992) {
+                onClose(); // Call the onClose function to close the offcanvas
+              }
+            }}
           >
             Contact
           </a>

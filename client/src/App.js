@@ -31,42 +31,42 @@ const App = () => {
         >
           <div
             id="Home"
-            className="min-vh-100 d-flex align-items-center px-5"
+            className="min-vh-100 d-flex align-items-center p-5"
             style={{ backgroundColor: "#212529" }}
           >
             <Home />
           </div>
           <div
             id="About"
-            className="min-vh-100 d-flex align-items-center px-5"
+            className="min-vh-100 d-flex align-items-center p-5"
             style={{ backgroundColor: "#343a40" }}
           >
             <About />
           </div>
           <div
             id="Skills"
-            className="min-vh-100 d-flex align-items-center px-5"
+            className="min-vh-100 d-flex align-items-center p-5"
             style={{ backgroundColor: "#212529" }}
           >
             <Skills />
           </div>
           <div
             id="Education"
-            className="min-vh-100 d-flex align-items-center px-5"
+            className="min-vh-100 d-flex align-items-center p-5"
             style={{ backgroundColor: "#343a40" }}
           >
             <Education />
           </div>
           <div
             id="Projects"
-            className="min-vh-100 d-flex align-items-center px-5"
+            className="min-vh-100 d-flex align-items-center p-5"
             style={{ backgroundColor: "#212529" }}
           >
             <Projects />
           </div>
           <div
             id="Contact"
-            className="min-vh-100 d-flex align-items-center px-5"
+            className="min-vh-100 d-flex align-items-center p-5"
             style={{ backgroundColor: "#343a40" }}
           >
             <Contact />

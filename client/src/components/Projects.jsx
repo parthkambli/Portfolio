@@ -44,11 +44,13 @@ const Projects = () => {
         showDots={true}
         responsive={responsive}
         removeArrowOnDeviceType={["md", "sm", "xs"]}
+        className="z-0"
       >
         {projectsList.projects.map((project) => (
           <div
             className="card text-white m-2 my-4 border border-2 border-white rounded-4"
             style={{ backgroundColor: "#111418" }}
+            key={project.id}
           >
             <img
               src={project.image}

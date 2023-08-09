@@ -102,7 +102,8 @@ const Contact = () => {
                 Address
               </h5>
               <p className="m-0 fs-6 fw-light" style={{ color: "#999999" }}>
-                Patel Pada, Dahanu, Maharashtra, 401602
+                101, Dave Darshan apartments, Patel Pada, Dahanu, Maharashtra,
+                401602
               </p>
             </div>
           </div>
