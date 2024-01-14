@@ -11,8 +11,8 @@
         {
             "id": 2,
             "name": "FoodBook",
-            "image": "https://ibb.co/S32Vn0n",
-            "description": "FoodBook is a place where you can sahare your recipies and expolore other peoples recipies",
+            "image": "https://i.ibb.co/RD1Q0P0/Food-Book-Screen-Shot.png",
+            "description": "A place where you can sahare your recipies and expolore more recipies",
             "githubLink": "https://github.com/parthkambli/FoodBook/tree/main",
             "liveDemoLink": "https://foodbook-app.netlify.app"
         }
