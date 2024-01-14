@@ -2,19 +2,19 @@
     "projects": [
         {
             "id": 1,
-            "name": "WorkoutBuddy",
-            "image": "https://i.ibb.co/zZ75hkH/Workout-Buddy.jpg",
-            "description": "Simple MERN App to Plane and Manage your Workout",
-            "githubLink": "https://github.com/parthkambli/WorkoutBuddy",
-            "liveDemoLink": "https://workout-buddy-mern-app.netlify.app/"
-        },
-        {
-            "id": 2,
             "name": "CineVerse",
             "image": "https://i.ibb.co/SNNC79w/Cine-Verse.jpg",
             "description": "The movie app built using TMDB API and React.js",
             "githubLink": "https://github.com/parthkambli/CineVerse",
             "liveDemoLink": "https://cineverse-app.netlify.app/"
+        },
+        {
+            "id": 2,
+            "name": "FoodBook",
+            "image": "https://ibb.co/S32Vn0n",
+            "description": "FoodBook is a place where you can sahare your recipies and expolore other peoples recipies",
+            "githubLink": "https://github.com/parthkambli/FoodBook/tree/main",
+            "liveDemoLink": "https://foodbook-app.netlify.app"
         }
     ]
 }
